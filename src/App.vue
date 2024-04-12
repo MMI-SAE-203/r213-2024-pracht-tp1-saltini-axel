@@ -27,19 +27,13 @@ const menuIsOpen = ref(false) // état du menu
 >
 <nav id="mainNav" v-show="menuIsOpen">
   <ul>
-    <li><a href="#">item 1</a></li>
-    <li><a href="#">item 2</a></li>
-    <li><a href="#">item 3</a></li>
+    <li><RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink></li>
+    <li><RouterLink to="/accordeon" class="text-red-500 underline"> Accordéon </RouterLink></li>
+
   </ul>
 </nav>
 </Transition>
-    <nav>
-      <ul>
-        <li>
-          <RouterLink to="/" class="text-red-500 underline"> Accueil </RouterLink>
-        </li>
-      </ul>
-    </nav>
+  
   </header>
   <RouterView v-slot="{ Component }">
     <Suspense>
