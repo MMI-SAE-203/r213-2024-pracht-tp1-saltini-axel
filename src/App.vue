@@ -18,7 +18,7 @@ const menuIsOpen = ref(false) // état du menu
 >
   menu
 </button>
-<nav id="mainNav">
+<nav id="mainNav" v-show="menuIsOpen">
   <ul>
     <li><a href="#">item 1</a></li>
     <li><a href="#">item 2</a></li>
