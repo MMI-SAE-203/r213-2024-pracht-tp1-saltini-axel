@@ -19,6 +19,12 @@ const menuIsOpen = ref(false) // état du menu
 >
   menu
 </button>
+<Transition
+  class="transition-transform duration-300"
+  enter-from-class="-translate-x-full"
+  enter-to-class="translate-x-0"
+  leave-active-class="-translate-x-full"
+>
 <nav id="mainNav" v-show="menuIsOpen">
   <ul>
     <li><a href="#">item 1</a></li>
@@ -26,6 +32,7 @@ const menuIsOpen = ref(false) // état du menu
     <li><a href="#">item 3</a></li>
   </ul>
 </nav>
+</Transition>
     <nav>
       <ul>
         <li>
